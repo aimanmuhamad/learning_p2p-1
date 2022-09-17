@@ -1,4 +1,4 @@
-from math_function import add, root
+from math_function import add, modulo
 
 
 def main():
@@ -8,12 +8,11 @@ def main():
         data_2 = int(input("masukkan input 2 :"))
         result = add(data_1, data_2)
         print("{} {} {} = {} ".format(data_1, operator, data_2, result))
-    
-    if operator == "root" :
+    elif operator == "%" :
         data_1 = int(input("masukkan input 1 :"))
-        result = root(data_1)
-        
-        print(result)
+        data_2 = int(input("masukkan input 2 :"))
+        result = modulo(data_1, data_2)
+        print("{} {} {} = {} ".format(data_1, operator, data_2, result))
     
 if __name__ == "__main__":
     print("Hello Main !")
